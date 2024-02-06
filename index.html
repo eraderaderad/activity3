@@ -2,20 +2,24 @@
 <html lang="en">
     <head>
         <title>Login</title>
-        <script>
-            console.log("hello tite");
-        </script>
     </head>
 
-    <body> <center>
+    <body style="background-color: pink;"><center>
         <div>
-            <h1>Login</h1>
-            <input type="text" placeholder="Username"> <br>
-            <input type="password" placeholder="Password">
+            <h1>Login</h1><br>
+            <input type="text" placeholder="Username" id="txtusername"><br><br>
+            <input type="password" placeholder="Password" id="txtpassword">
             <div style="margin-top: 1rem;">
-                <button id="btnlogin">Login</button>
+            <a href="./homepage.html"><button id="btnlogin">Login</button></a>
             </div>
         </div>
     </center>
 </body>
+        <script>
+            console.log("hello tite");
+            let buttonLogin = document.querySelector('#btnlogin');
+            buttonLogin.onclick = function () {
+                alert("Login successfully.")
+            };
+        </script>
 </html>
