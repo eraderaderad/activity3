@@ -2,18 +2,39 @@
 <html lang="en">
     <head>
         <title>Login</title>
+        <style>
+            /* pang id */
+            #divContainer {
+                text-align: center;
+            }
+            /* pang class name */
+            .redText {
+                color: red;
+                background-color: white;
+            }
+            input {
+                text-align: justify;
+            }
+            .redText:hover {
+                color: blue;
+            }
+            #btnlogin:hover {
+                color: rebeccapurple;
+                cursor: pointer;
+                font-size: xx-large;
+            }
+        </style>
     </head>
 
-    <body style="background-color: pink;"><center>
-        <div>
-            <h1>Login</h1><br>
-            <input type="text" placeholder="Username" id="txtusername"><br><br>
-            <input type="password" placeholder="Password" id="txtpassword">
+    <body style="background-color: pink;">
+        <div id="divContainer">
+            <marquee><h1>Login</h1></marquee><br>
+            <input type="text" placeholder="Username" id="txtusername" class="redText"><br><br>
+            <input type="password" placeholder="Password" id="txtpassword" class="redText">
             <div style="margin-top: 1rem;">
             <a href="./homepage.html"><button id="btnlogin">Login</button></a>
             </div>
         </div>
-    </center>
 </body>
         <script>
             console.log("hello tite");
